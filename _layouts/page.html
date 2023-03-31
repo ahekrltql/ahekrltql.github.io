@@ -2,13 +2,7 @@
 layout: default
 ---
 
-{% if page.title %}
-  <h1 id="{{ page.id }}" data-level="1.1" class="no_toc">{{ page.title | escape }}</h1>
-{% endif %}
-{% if page.subtitle %}
-  <div class="page-subtitle">{{ page.subtitle | escape }}</div>
-{% endif %}
-
-<section class="normal markdown-section">
+<div class="page">
+  <h1 class="page-title">{{ page.title }}</h1>
   {{ content }}
-</section>
+</div>
